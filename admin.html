@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Grim Development -  Some new initiatives </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!--===============================================================================================-->
+</head>
+<body style="font-family: Poppins-Regular, sans-serif;">
+    <nav id="navbar" class="navbar navbar-trans navbar-dark fixed-top">
+        <span class="navbar-brand mb-0 h1">Admin Panel</span>
+    </nav>
+	<div id="apage" class="container-login100" style="display: block;
+        padding-bottom: 0px!important;
+        background: #050505;
+        background: -webkit-linear-gradient(-135deg, #000000, #1d396c);
+        background: -o-linear-gradient(-135deg, #000000, #1d396c);
+        background: -moz-linear-gradient(-135deg, #000000, #1d396c);
+        background: linear-gradient(-135deg, #000000, #1d396c);">
+        <div id="contact-form" class="text-light offset mx-1 my-5">
+            <br>
+            <div id="alert" style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success!</strong> <span> One account registered successfully.</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>   
+            <br>
+            <h2 class="text-center mb-5"><span>Register Manager</span></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <section>
+                            <div class="form-group">
+                                <label for="name">Your Name: </label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter User's Name" data-rule="minlen:4" data-msg="">
+                                <small id="ns" class="text-warning"> Name can't be empty</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Username: </label>
+                                <input type="text" class="form-control" id="username" placeholder="Enter Username" data-rule="required" data-msg="">
+                                <small id="uns" class="text-warning"> Username already exists</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password: </label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter Password" data-rule="minlen:8" data-msg="Please enter at least 8 chars">
+                                <small id="ps" class="text-warning"> Password must contain at least 6 digits</small>
+                            </div>
+                            <div class="text-center my-5">
+                                <button id="btn" class="btn btn-outline-success" style="width: 100%;" onclick="register()">Register</button>
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="background: #fff;">
+        <footer class="blog-footer" style="display: block;">
+            <div class="container text-center text-light">
+                <p class="text-light">Copyright   2022 | Grim | Development </p>
+            <!-- 			 <p class="font-weight-bold">designed by <a class="text-warning" href="https://tahmid-mahmud.github.io/portfolio/">Tahmid Mahmud</a> -->
+                <p></p>
+                <p><a class="text-info" href="https:\\grimdev.xyz">Back to home</a></p>
+            </div>
+        </footer>
+	</div>
+	
+
+		
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<!--Firebase Libraries-->
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<script src="js/main.js"></script>
+    <script src="js/fb.js"></script>
+    <script src="js/config.js"></script>
+</body>
+</html>
